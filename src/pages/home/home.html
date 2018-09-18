@@ -1,0 +1,61 @@
+<ion-header >
+  <ion-navbar color="vr-house-1">
+    <ion-title text-center><span text-color="my-custom-color">VR</span> <ion-icon name="ios-home"></ion-icon> <span text-color="vr-house-2">HOUSE</span></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1 text-center>Entre dans votre prochaine maison</h1>
+  <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)"
+     placeholder="Chercher par ville ou quartier">
+  </ion-searchbar>
+  <ion-card class="myCard">
+    <img src="https://ideesdeconceptiondejardin.cf/wp-content/uploads/2018/04/attirant-chambre-moderne-chambre-moderne-a-louer-a-douala-bonamoussadi.jpg"/>
+
+    <ion-card-content>
+      <ion-card-title>
+          CHAMBRE
+      </ion-card-title>
+      <p>
+
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <p></p>
+    <img src="http://www.koutchoumi.com/uploads/photos/9ee498ee1b4609d3e9e783cd5372e246ee0518c7.jpeg"/>
+
+    <ion-card-content>
+      <ion-card-title>
+        STUDIO
+      </ion-card-title>
+
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="myCard">
+    <img src="https://ideesdeconceptiondejardin.cf/wp-content/uploads/2018/04/attirant-chambre-moderne-chambre-moderne-a-louer-a-douala-bonamoussadi.jpg"/>
+
+    <ion-card-content>
+      <ion-card-title>
+        APPARTEMENT
+      </ion-card-title>
+      <p>
+
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-footer class="vr-footer">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-10 push-1>
+        <button ion-button round full class="vr-button" color="vr-house-2" (click)="onSaveList()">Devenir agent</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

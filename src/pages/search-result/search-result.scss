@@ -1,0 +1,20 @@
+page-search-result {
+  ion-icon{
+    font-size: 1em;
+
+  }
+  button.vr-size{
+    height: 30px;
+    width: 110px;
+    font-size: 0.8em;
+  }
+  .price{
+    font-size: .8em !important;
+    color: red !important;
+  }
+
+  ion-card{
+    border-radius:3%!important;
+  }
+
+}

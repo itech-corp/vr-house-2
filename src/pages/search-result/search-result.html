@@ -1,0 +1,116 @@
+<!--
+  Generated template for the SearchResultPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="vr-house-1">
+
+    <ion-title>
+      <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <ion-icon name="arrow-round-back"></ion-icon>
+        </ion-col>
+        <ion-col col-6>
+          Douala
+        </ion-col>
+        <ion-col push-3 col-1>
+          <ion-icon name="search"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="puppies">
+        Chambres
+      </ion-segment-button>
+      <ion-segment-button value="kittens">
+       Studio
+      </ion-segment-button>
+      <ion-segment-button value="villa">
+       Villa
+      </ion-segment-button>
+      <ion-segment-button value="ducklings">
+        Appartement
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+
+
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'puppies'">
+      <ion-item>
+
+        <ion-card>
+          <img no-margin no-padding src="https://ideesdeconceptiondejardin.cf/wp-content/uploads/2018/04/attirant-chambre-moderne-chambre-moderne-a-louer-a-douala-bonamoussadi.jpg"/>
+
+              <ion-card-content no-margin no-padding>
+            <ion-card-title>
+
+            <ion-grid>
+              <ion-row>
+
+                <ion-col col-8 text-wrap class="price">
+                  30.000 FCFA/Mois
+                </ion-col>
+                <ion-col >
+                  <ion-icon color="grey"  name="heart"></ion-icon>
+                </ion-col>
+                <ion-col>
+                  <ion-icon color="grey" name="share-alt"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            </ion-card-title>
+           <ion-grid>
+
+             <ion-row>
+               <ion-col text-wrap col-5 >
+                 <div>
+                   Chambre moderne à Makepe
+                 </div>
+               </ion-col>
+               <ion-col push-sm-5 push-2>
+                 <button  class="vr-size" ion-button color="vr-house-2" round icon-start>
+                   Prendre un RDV
+                 </button>
+               </ion-col>
+             </ion-row>
+           </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'kittens'">
+
+      <ion-item>
+        <ion-card class="myCard">
+          <img src="https://ideesdeconceptiondejardin.cf/wp-content/uploads/2018/04/attirant-chambre-moderne-chambre-moderne-a-louer-a-douala-bonamoussadi.jpg"/>
+
+          <ion-card-content>
+            <ion-card-title>
+              CHAMBRE
+            </ion-card-title>
+            <p>
+
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+
+    </ion-list>
+  </div>
+
+</ion-content>
